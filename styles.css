@@ -4,9 +4,59 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #222;
+    text-decoration: none;
+    margin-left: 0.8rem;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link.rounded {
+    display: flex;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link.rounded:hover {
+    background-color: #eee;
+    text-decoration: none;
+}
+
+.app-icon {
+    font-size: 22px;
+}
+.acct-icon {
+    color: rgb(33, 149, 33);
+    font-size: 32px;
+}
+
+
+/* Main Content Styles */
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
