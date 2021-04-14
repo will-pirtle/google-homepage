@@ -7,6 +7,7 @@
 body {
     font-size: 14px;
     font-family: arial, sans-serif;
+    color: #222;
 }
 
 /* Navbar Styles */
@@ -46,6 +47,7 @@ body {
 }
 
 .app-icon {
+    color: #888;
     font-size: 22px;
 }
 .acct-icon {
@@ -69,7 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 600px;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
 }
 
 .form-group {
@@ -83,18 +85,22 @@ body {
     display: flex;
     justify-content: flex;
     align-items: center;
-    width: 90%;
-    border: 1px solid rgb(236, 236, 236);
+    width: 95%;
+    border: 1px solid #ddd;
     border-radius: 50px;
     padding: 0 1rem;
 }
 .search-box:hover {
-    border: 1px solid #ccc;
+    box-shadow: 0 0.75px 0.7px 1.75px rgb(231, 231, 231);
+}
+.search-box:focus-within {
+    box-shadow: 0 0.75px 0.7px 1.75px rgb(231, 231, 231);
 }
 
 .search-icon {
-    color: rgb(128, 128, 128);
-    font-size: 20px;
+    color: #999;
+    font-size: 18px;
+    font-weight: bold;
     margin-right: 0.75rem;
 }
 
@@ -120,5 +126,5 @@ body {
 
 .form-group button:hover {
     cursor: pointer;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 0.7px 1px #ccc;
 }
