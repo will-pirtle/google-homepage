@@ -8,6 +8,14 @@ body {
     font-size: 14px;
     font-family: arial, sans-serif;
     color: #222;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
 }
 
 /* Navbar Styles */
@@ -27,7 +35,6 @@ body {
     text-decoration: none;
     margin-left: 0.8rem;
 }
-
 .nav-link:hover {
     text-decoration: underline;
 }
@@ -60,9 +67,8 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    flex: 1;
     padding-top: 10rem;
 }
 
@@ -91,10 +97,10 @@ body {
     padding: 0 1rem;
 }
 .search-box:hover {
-    box-shadow: 0 0.75px 0.7px 1.75px rgb(231, 231, 231);
+    box-shadow: 0 1px 0.7px 1.4px rgb(231, 231, 231);
 }
 .search-box:focus-within {
-    box-shadow: 0 0.75px 0.7px 1.75px rgb(231, 231, 231);
+    box-shadow: 0 1px 0.7px 1.4px rgb(231, 231, 231);
 }
 
 .search-icon {
@@ -123,8 +129,26 @@ body {
 
     font-size: 14px;
 }
-
 .form-group button:hover {
     cursor: pointer;
     box-shadow: 0 0 0.7px 1px #ccc;
+}
+
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #eee;
+    padding: 1rem 1.5rem;
+}
+
+.footer-link {
+    color: #666;
+    text-decoration: none;
+    margin: 0 0.6rem;
+}
+.footer-link:hover {
+    text-decoration: underline;
 }
